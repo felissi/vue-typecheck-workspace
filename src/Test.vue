@@ -9,11 +9,11 @@
     <RouterLink />
     <span></span>
     <SomeComponentWithLongName :a-prop="123" />
+    <div>{{ getCount }}</div>
   </div>
 </template>
 
 <script>
-// @ts-check
 import * as _ from 'lodash'
 import * as $ from 'jquery'
 import { implementedFunction } from '@/realFunc'
@@ -23,7 +23,6 @@ import {} from 'vuex'
 getT('123') // param check for pure ts type
 implementedFunction() // param check for pure js with doc
 export default {
-  // @ts-check
   props: {
     foo: { default: 'a', type: String },
     bar: { default: 'bar', type: String }
@@ -43,6 +42,11 @@ export default {
     t1(a) {
       const b = a
       return 'b[0]' // Should say return type is wrong
+    }
+  },
+  computed: {
+    getCount() {
+      return this.t1(123)
     }
   },
   mounted() {

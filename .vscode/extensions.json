@@ -1,16 +1,13 @@
 {
 	// See https://go.microsoft.com/fwlink/?LinkId=827846 to learn about workspace recommendations.
 	// Extension identifier format: ${publisher}.${name}. Example: vscode.csharp
-
 	// List of extensions which should be recommended for users of this workspace.
 	"recommendations": [
-		"Vue.volar", 
-		"Vue.vscode-typescript-vue-plugin", 
-		"octref.vetur", // This will tell the type of props, data, methods, etc
-		"ms-vscode.vscode-typescript-next"
+		"Vue.volar", // Another ts language service, it will make a ts pop up when hover.
+		"Vue.vscode-typescript-vue-plugin",
+		"octref.vetur", // This will tell the type of props, data, methods, etc. (It hover too)
+		"ms-vscode.vscode-typescript-next" // Optional, for pure js lint
 	],
 	// List of extensions recommended by VS Code that should not be recommended for users of this workspace.
-	"unwantedRecommendations": [
-		
-	]
+	"unwantedRecommendations": []
 }
