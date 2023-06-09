@@ -1,5 +1,7 @@
 {
   "vetur.experimental.templateInterpolationService": true,
   "editor.semanticHighlighting.enabled": true,
-  "javascript.preferences.importModuleSpecifier": "non-relative"
+  "javascript.preferences.importModuleSpecifier": "non-relative",
+  "vetur.validation.template": true,
+  "vetur.validation.templateProps": true
 }

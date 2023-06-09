@@ -5,9 +5,12 @@ A Vue project with minimal setup and dependencies for trying out [Vetur](https:/
 ## Usage
 
 - Install latest version of [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur)
-- `git clone git@github.com:octref/veturpack.git`
-- `cd veturpack`
-- `yarn install`
+- Install [Vue Language Features (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+- Install [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin)
+- Install [JavaScript and TypeScript Nightly](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-next) (Optional)
+- `git clone https://github.com/felissi/vue-typecheck-workspace.git`
+- `cd vue-typecheck-workspace`
+- `npm install`
 - `code .`
 
 ## Things to Try
@@ -20,11 +23,14 @@ Try all features below in `src/Test.vue`. You can read more about these features
 - Complete on `<some`. You should see `<SomeComponentWithLongName>`. Read more about this feature in [Framework Support](https://vuejs.github.io/vetur/framework.html).
     > This requires the component to have `export default {}`, in other words, is exporting a **module**.
 - Hover over any tags such as `<div>` or `<router-link>`. You'll see the tag's description.
-- Because of `"vetur.experimental.templateInterpolationService": true` in `.vscode/settings.json`, you should see an error on `{{ fo }}` in the template section. Change it to `foo` to fix the error.
-- Delete the `foo` in `{{ foo }}`. Type `b`. You should see completion of `bar`.
+> - Because of `"vetur.experimental.templateInterpolationService": true` in `.vscode/settings.json`, you should see an error on `{{ fo }}` in the template section. Change it to `foo` to fix the error.
+> - Delete the `foo` in `{{ foo }}`. Type `b`. You should see completion of `bar`.  
+
+> (* I dont know if this works or not)
 - In script section, try `_.`. You should see all [lodash](https://lodash.com)'s methods.
-- Install another library with types, such as [jquery](https://api.jquery.com/). `yarn add -S jquery && yarn add -D @types/jquery`. After importing it with `import * as $ from 'jquery'`, you should get `$.` completions.
-- Setup [eslint-plugin-vue](https://eslint.vuejs.org/user-guide/) with a `.eslintrc`. Set `"vetur.validation.template": false` to turn off Vetur's builtin ESLint linter. You'll get ESLint warnings now.
+- ~~Install another library with types, such as [jquery](https://api.jquery.com/). `yarn add -S jquery && yarn add -D @types/jquery`. After importing it with `import * as $ from 'jquery'`, you should get `$.` completions.~~
+- ~~Setup [eslint-plugin-vue](https://eslint.vuejs.org/user-guide/) with a `.eslintrc`. Set `"vetur.validation.template": false` to turn off Vetur's builtin ESLint linter. You'll get ESLint warnings now.~~
+    > (This needs JSX and eslint, everything about templates is not working)
 - In `<script>` section, add `//@ts-check`. Write some type-unsafe code, such as `let a = 'a'; a = 5`. You'll see an error.
 - F1 -> Format the document. You can [configure](https://vuejs.github.io/vetur/formatting.html) the formatters and their settings as well.
 - In `.prettierrc.json`, set `"singleQuote": true` and format again.
