@@ -4,6 +4,6 @@
  * @export
  * @param {{a:number,b:string,c:boolean}} _
  */
-export function implementatedFunction({a,b,c}) {
+export function implementedFunction({a,b,c}) {
 
 }
